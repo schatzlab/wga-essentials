@@ -2,6 +2,8 @@
 
 ## Whole Genome Assembly (WGA) essentials tools and packages.
 
+Initial version from: https://github.com/srivathsapv/wga-essentials
+
 This docker image contains essential packages and tools for whole genome assembly and alignment. The following are the packages
 that are available in this docker image:
 
@@ -10,10 +12,6 @@ that are available in this docker image:
 * spades
 * mummer
 * samtools
-
-**Change Log 02/24**:
-
-Added the following tools
 * freebayes
 * bcftools
 * bowtie2
@@ -33,13 +31,13 @@ The below steps worked on MacBook Pro (OS X High Sierra)
 #### Pull docker image
 
 ```
-$ docker pull srivathsapv/wga-essentials
+$ docker pull schatzlab/wga-essentials
 ```
 
 #### Run the docker image
 
 ```
-$ docker run -it -d -v <source_code_path>:/root/source_code srivathsapv/wga-essentials bin/bash
+$ docker run -it -d -v <source_code_path>:/root/source_code schatzlab/wga-essentials bin/bash
 ```
 
 **Note**: The `<source_code_path>` can be your working directory in your host machine (local machine). This enables the docker
