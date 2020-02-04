@@ -1,7 +1,8 @@
 ## Rebuild with: 
 ##   docker build github.com/schatzlab/wga-essentials -t schatzlab/wga-essentials
-## 
-## docker run -it -d -v ~:/root/source_code schatzlab/wga-essentials bin/bash
+##   docker run -it -d -v ~:/root/source_code schatzlab/wga-essentials bin/bash
+##   Get long hex string -- extract first 6 characters
+##   docker exec -it 92b74b bin/bash
 
 FROM ubuntu:16.04
 
