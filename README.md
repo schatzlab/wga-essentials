@@ -31,13 +31,13 @@ The below steps worked on MacBook Pro (OS X High Sierra)
 #### Pull docker image
 
 ```
-$ docker pull schatzlab/wga-essentials
+$ docker pull mschatz/wga-essentials
 ```
 
 #### Run the docker image
 
 ```
-$ docker run -it -d -v <source_code_path>:/root/source_code schatzlab/wga-essentials bin/bash
+$ docker run -it -d -v <source_code_path>:/root/source_code mschatz/wga-essentials bin/bash
 ```
 
 **Note**: The `<source_code_path>` can be your working directory in your host machine (local machine). This enables the docker
