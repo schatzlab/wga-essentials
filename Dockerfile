@@ -40,7 +40,7 @@ RUN cd /tmp \
     && curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \
     && bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/conda
 ENV PATH=/opt/conda/bin:$PATH
-RUN conda install -y conda=4.4.7
+# RUN conda install -y conda=4.4.7
 RUN conda config --add channels defaults \
     && conda config --add channels conda-forge \
     && conda config --add channels bioconda
