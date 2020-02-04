@@ -1,4 +1,7 @@
-## Rebuild with: docker build github.com/schatzlab/wga-essentials
+## Rebuild with: 
+##   docker build github.com/schatzlab/wga-essentials -t schatzlab/wga-essentials
+## 
+## docker run -it -d -v ~:/root/source_code schatzlab/wga-essentials bin/bash
 
 FROM ubuntu:16.04
 
