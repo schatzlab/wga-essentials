@@ -6,6 +6,8 @@
 ##   check that it works
 ##   get docker id:
 ##   docker ps
+##   docker login
+##    username: mschatz
 ##   docker commit 92b74bf1d952 mschatz/wga-essentials
 
 FROM ubuntu:16.04
