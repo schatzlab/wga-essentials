@@ -1,8 +1,12 @@
 ## Rebuild with: 
-##   docker build github.com/schatzlab/wga-essentials -t schatzlab/wga-essentials
-##   docker run -it -d -v ~:/root/source_code schatzlab/wga-essentials bin/bash
+##   docker build github.com/mschatz/wga-essentials -t mschatz/wga-essentials
+##   docker run -it -d -v ~:/root/source_code mschatz/wga-essentials bin/bash
 ##   Get long hex string -- extract first 6 characters
 ##   docker exec -it 92b74b bin/bash
+##   check that it works
+##   get docker id:
+##   docker ps
+##   docker commit 92b74bf1d952 mschatz/wga-essentials
 
 FROM ubuntu:16.04
 
