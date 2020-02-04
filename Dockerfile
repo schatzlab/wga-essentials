@@ -1,3 +1,5 @@
+## Rebuild with: docker build github.com/schatzlab/wga-essentials
+
 FROM ubuntu:16.04
 
 ########################################
