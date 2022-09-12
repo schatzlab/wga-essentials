@@ -37,11 +37,15 @@ $ docker pull mschatz/wga-essentials
 #### Run the docker image
 
 ```
-$ docker run -it -d -v <source_code_path>:/root/source_code mschatz/wga-essentials bin/bash
+$ docker run -it -d -v <source_code_path>:/root/<source_code> mschatz/wga-essentials bin/bash
 ```
 
-**Note**: The `<source_code_path>` can be your working directory in your host machine (local machine). This enables the docker
-container to access your local files (code and reads/reference genome files)
+**Note**: The `<source_code_path>` can be your working directory in your host machine (local machine) and <source_code> will be the mountpoint inside the container. This enables the docker container to access your local files (code and reads/reference genome files)
+
+***Note 2***: On a recent Mac with a M1 or later chip you will need to specify the kernel, e.g.
+```
+$ docker run --platform linux/amd64 -it -d -v asm:/root/asm mschatz/wga-essentials bin/bash
+```
 
 The above command will print a long hexadecimal string. Ex:
 
