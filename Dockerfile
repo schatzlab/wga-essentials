@@ -14,8 +14,6 @@
 
 FROM --platform=linux/amd64 ubuntu
 
-ENV DEBIAN_FRONTEND=noninteractive
-
 ########################################
 # ROOT MODE
 ########################################
