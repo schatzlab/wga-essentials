@@ -10,6 +10,7 @@
 ##   docker login
 ##    username: mschatz
 ##   docker commit 92b74bf1d952 mschatz/wga-essentials
+##   docker push mschatz/wga-essentials
 
 FROM --platform=linux/amd64 ubuntu
 
