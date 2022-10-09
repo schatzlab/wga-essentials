@@ -60,4 +60,4 @@ RUN conda config --add channels defaults \
     && conda config --add channels conda-forge \
     && conda config --add channels bioconda
 
-RUN conda install -y fastqc jellyfish spades mummer samtools freebayes bcftools bowtie2
+RUN conda install -y fastqc jellyfish spades mummer samtools freebayes bcftools bowtie2 bedtools
